@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chains Of Morr</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#cover" style="height: 52px;"><img src="/img/icon.svg"></a>
+
+        <div class="buttongroup">
+
+            <img src="/img/navdiv.svg" alt="">
+
+            <a href="#how">How it plays</a>
+            <img src="/img/navdiv.svg" alt="">
+
+            <a href="#chain">Chain system</a>
+            <img src="/img/navdiv.svg" alt="">
+
+            <a href="#cards">Cards</a>
+            <img src="/img/navdiv.svg" alt="">
+
+            <a href="#tournament">Tournament</a>
+            <img src="/img/navdiv.svg" alt="">
+
+            <a href="#about">About</a>
+            <img src="/img/navdiv.svg" alt="">
+
+            <a class="discbutton" href="https://discord.gg/ybsKua6XVM" target="_blank">
+                <img src="/img/discord.svg" alt="">
+                <div></div>
+                Join our Discord to Play
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main page -->
+    <div id="cover" class="container cover">
+        <!-- <img class="logo" src="/img/logo.svg" alt=""> -->
+    
+        <h1>
+            Turn-based Strategy Game <br>
+            <span>with unique card system.</span>
+        </h1>
+    </div>
+
+    <!-- How it plays -->
+    <div id="how" class="container row">
+        <div class="container list">
+            <h1>How it plays</h1>
+            <ol>
+                <li>Players get three units each.</li>
+                <li>Move units towards the King’s Chamber.</li>
+                <li>Play cards to get an advantage.</li>
+                <li>When one player moves all units to the King’s Chamber, the game ends.</li>
+                <li>Player with the most points wins.</li>
+            </ol>
+        </div>
+
+        <img src="/img/screen.png" alt="Screenshot" style="width: 588px;">
+    </div>
+
+    <div class="container" style="margin-bottom: 360px;">
+        <div class="speechbubble" style="position: absolute; top: -16px; left: 154px;">
+            <p>Learn how to play in 5 minutes</p>
+            <img src="/img/triangle.svg" alt="">
+        </div>
+    
+        <div class="speechbubble" style="position: absolute; top: -16px; left: 512px;">
+            <p>It's a Free, 10 minute<br>browser game!</p>
+            <img src="/img/triangle.svg" alt="">
+        </div>
+    </div>
+    
+
+    <!-- Card Chain System -->
+    <div id="chain" class="container row">
+        <img src="/img/chain.svg" alt="">
+
+        <div class="container list">
+            <h1 >Card Chain System</h1>
+            <ul>
+                <li>Players place cards at the start exposing their intent.</li>
+                <li>Cads activate when pushed into the 3rd link by other cards placed at the start.</li>
+                <li>Some cards can move the chain to the other side, activating cards from previous turns.</li>
+                <li>Player can avoid adding cards to the chain, to prevent the opponent from getting the card they wanted.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Base Cards -->
+    <div id="cards" class="container fullwidth cardbase" >
+
+        <h1 >Base Cards</h1>
+        <img src="/img/carddiv.svg" alt="">
+        <div class="cardgrid container row">
+            <img src="/img/cards/move.svg">
+            <img src="/img/cards/soul exchange.svg">
+            <img src="/img/cards/greed.svg">
+            <img src="/img/cards/fear.svg">
+            <img src="/img/cards/teleport.svg">
+
+            <img src="/img/cards/death.svg">
+            <img src="/img/cards/tornado.svg">
+            <img src="/img/cards/tribunal.svg">
+            <img src="/img/cards/ghostcube.svg">
+            <img src="/img/cards/draw.svg">
+
+            <img src="/img/cards/control.svg">
+            <img src="/img/cards/sacrifice.svg">
+            <img src="/img/cards/feast.svg">
+            <img src="/img/cards/shadow.svg">
+            <img src="/img/cards/seemore.svg">
+            
+        </div>
+        <img src="/img/carddiv.svg" alt="">
+
+        <!-- Tournament -->
+        <div id="tournament" class="container list">
+    
+            <h1 >Tournament</h1>
+
+            <p>We will run a tournament with prizes for 12 players. It will be a mix of 1v1v1 and 1v1 games. Most players will be new, so it should be quite fun.</p>
+        
+            <h2>Tournament info</h2>
+
+            <ul>
+                <li>12 player double elimination</li>
+                <li>Mix of 1v1v1s and 1v1s</li>
+                <li>Will happen over multiple days</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="container row">
+
+        <div class="container list">
+            <h1 id="about">About</h1>
+            <p>
+                We played some old board games and decided to create our own game. Something simple and easy to pick up. After a few months of  design and testing, we came up with our game concept.<br><br>
+        
+                We started a discord community and created a web prototype to play the game with every other day.<br><br>
+        
+                Now we plan to make the game more accessible. We want to improve our browser game and maybe release a physical version as well.
+            </p>
+        </div>
+    
+        <!-- Team -->
+        <div class="container row">
+
+            <div class="profile">
+                <div class="speechbubble">
+                    <p>We look for a web developer to improve the game.</p>
+                    <img src="/img/triangle.svg" alt="">
+                </div>
+            
+                <img src="/img/pav.jpg" alt="">
+            
+                <p>
+                    Pavel Alekseev<br>
+                    <span>Design & development</span>
+                </p>
+            
+                <p>
+                    -
+                </p>
+            </div>
+        
+            <div class="profile">
+                <div class="speechbubble">
+                    <p>If you want to join, send 
+                        a note in <a href="https://discord.gg/ybsKua6XVM" target="_blank">Discord</a>.</p>
+                    <img src="/img/triangle.svg" alt="">
+                </div>
+            
+                <img src="/img/art.jpg" alt="">
+            
+                <p>
+                    Arthur Vaskinels<br>
+                    <span>Development & playtesting</span>
+                </p>
+            
+                <p>Holds a world record for losing the game in two turns.</p>
+            </div>
+        
+            <div class="profile">
+                <div class="speechbubble">
+                    <p>“Omg... I got seven mages!”</p>
+                    <img src="/img/triangle.svg" alt="">
+                </div>
+            
+                <img src="/img/pla.jpg" alt="">
+            
+                <p>
+                    Platypus<br>
+                    <span>Playtesting</span>
+                </p>
+            
+                <p>Known for activating Tornado three times in one turn.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container fullwidth">
+        <div class="container row">
+            <img src="/img/logo.svg" alt="">
+    
+            <div class="container">
+                <a href="https://twitter.com/chainsofmorr" target="_blank">Twitter &#x2197;</a>
+                <a href="https://www.instagram.com/chains_of_morr/" target="_blank">Instagram &#x2197;</a>
+                <a href="https://discord.gg/ybsKua6XVM" target="_blank">All game info and rules in Discord &#x2197;</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

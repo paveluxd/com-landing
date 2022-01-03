@@ -1,0 +1,292 @@
+:root{
+    --b10: rgba(0, 0, 0, 0.1);
+    --b38: rgba(0, 0, 0, 0.38);
+    --b54: rgba(0, 0, 0, 0.54);
+    --b87: rgba(0, 0, 0, 0.87);
+    --blue: #3366FF;
+
+    --w25: rgba(255,255,255,0.25)
+
+}
+
+html{
+    scroll-behavior:smooth
+}
+
+#how, #chain, #cards, #tournament, #about {
+    scroll-margin-top: 100px;
+  }
+
+/* *{outline: 0.5px solid var(--b38) !important;} */
+
+*{
+    transition: all 0.2s;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--b87);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 24px;
+
+    background-image: url('/img/cover.svg');
+    background-repeat:no-repeat;
+    background-position-x: center;
+}
+
+/* COMPONENTS */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 24px;
+
+    position: relative;
+    width: calc(100vw - 48px);
+    max-width: 1200px;
+}
+
+.fullwidth{
+    min-width: 100%;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.list {
+    align-items: flex-start;
+    width: 416px !important;
+}
+
+
+h1, h2, h3{
+    font-family: 'Grenze', serif;
+    font-weight: 400;
+    line-height: 95%;
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+}
+
+a{
+    color: var(--b87);
+}
+
+p, ul, ol{
+    max-width: 416px;
+}
+
+ul, ol{
+    padding-left: 20px;
+}
+li{
+    margin-bottom: 12px;
+}
+
+
+
+/* NAVIGATION */
+nav{
+    width: 100%;
+    padding: 0;
+
+    position: fixed;
+    top: 0;
+
+
+    display: flex;
+    background-color: var(--b87);
+    backdrop-filter: blur(3px);
+    justify-content: space-between;
+
+    align-items: center; 
+    z-index: 2;
+}
+
+nav *{
+    color: white;
+    text-decoration: none;
+}
+
+nav .buttongroup a{
+    padding: 12px 8px;
+    line-height: 28px;
+    white-space: nowrap;
+    border-radius: 0px;
+}
+
+nav .buttongroup a:hover{
+    background-color: var(--w25);   
+}
+
+.discbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    
+    background-color: var(--blue);
+    border-radius: 6px !important;
+    padding: 2px 10px 2px 8px !important;
+    margin-left: 8px;
+
+    border: 2px solid black;
+}
+
+.discbutton div{
+    width: 1px;
+    height: 32px;
+    background-color: var(--w25);
+}
+
+.buttongroup{
+    display: flex;
+    gap: 0px;
+}
+
+
+
+/* MAIN PAGE */
+.cover {
+    height: 752px;
+}
+
+.cover h1{
+    margin-top: 380px;
+}
+
+/* HOW */
+#how {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+/* ABOUT */
+.profile{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile p:nth-child(3) {
+    font-weight: 700;
+}
+
+.profile p:nth-child(4){
+    font-weight: 400;
+    color: var(--b54);
+    font-style: oblique;
+    width: 254px;
+}
+
+.profile span{
+    font-weight: 400;
+}
+
+.profile img{
+    width: 120px;
+}
+
+.speechbubble{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 236px;
+    font-style: oblique;
+    text-align: center;
+
+}
+
+.speechbubble p{
+    background-color: black;
+    padding: 16px;
+    color: white;
+}
+
+.speechbubble a{
+    color: white;
+}
+
+.speechbubble img{
+    height: 10px;
+}
+
+.logo{
+    height: 96px;
+}
+
+/* CARD GRID */
+.cardbase{
+    background-color: black;
+    color: white;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.cardgrid{
+    max-width: 840px;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin: 12px;
+}
+
+.cardgrid img{
+    max-height: 200px;
+}
+
+.cardgrid img:hover{
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 24px rgb(0, 0, 0, 0.99));
+    z-index: 2;
+}
+
+#cards{
+    background-image: url(/img/cardscover.svg);
+    background-repeat:no-repeat;
+    background-position-x: center;
+
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--b10);
+    height: 460px;
+
+    /* align-items: flex-end !important; */
+    justify-content: flex-end !important;
+
+    background-image: url('/img/footercover.svg');
+    background-repeat:no-repeat;
+    background-position-x: center;
+}
+
+footer div:nth-child(1){
+    margin-bottom: 48px;
+    padding: 0;
+}
+
+footer div{
+    align-items: flex-end !important;
+    justify-content: flex-end !important;
+    gap: 12px !important;
+}
