@@ -57,6 +57,12 @@
             Turn-based Strategy Game <br>
             <span>with unique card system.</span>
         </h1>
+
+        <a class="discbutton" href="https://discord.gg/ybsKua6XVM" target="_blank">
+            <img src="img/discord.svg" alt="">
+            <div></div>
+            Join our Discord to Play
+        </a>
     </div>
 
     <!-- How it plays -->
@@ -72,16 +78,16 @@
             </ol>
         </div>
 
-        <img src="img/screen.png" alt="Screenshot" style="width: 588px;">
+        <img src="img/screen.png" alt="Screenshot">
     </div>
 
-    <div class="container" style="margin-bottom: 360px;">
-        <div class="speechbubble" style="position: absolute; top: -16px; left: 154px;">
+    <div class="container" style="margin-bottom: 320px;">
+        <div class="speechbubble" style="position: absolute; top: 36px; left: 154px; transform: rotate(1deg);">
             <p>Learn how to play in 5 minutes</p>
             <img src="img/triangle.svg" alt="">
         </div>
     
-        <div class="speechbubble" style="position: absolute; top: -16px; left: 512px;">
+        <div class="speechbubble" style="position: absolute; top: 36px; left: 512px; transform: rotate(-2deg);">
             <p>It's a Free, 10 minute<br>browser game!</p>
             <img src="img/triangle.svg" alt="">
         </div>
@@ -90,13 +96,31 @@
 
     <!-- Card Chain System -->
     <div id="chain" class="container row">
-        <img src="img/chain.svg" alt="">
+        <div class="container" style="width: auto; margin-left: 48px;">
+
+            <div style="position:relative; transform: rotate(2deg);">
+                <img src="img/chain.svg" alt="">
+                <img class="card topcard" src="img/cards/sacrifice.svg">
+    
+                <div class="container row">
+                    <img class="card" src="img/cards/greed.svg">
+                    <img class="card" src="img/cards/tornado.svg">
+                    <img class="card" src="img/cards/tribunal.svg">
+                    <img class="card" src="img/cards/ghostcube.svg">
+                    <img class="card" src="img/cards/back.svg">
+                </div>
+            </div>
+   
+
+
+            <h1>Cards are placed at the start,<br> but only cards in 3rd link activate.</h1>
+        </div>
 
         <div class="container list">
             <h1 >Card Chain System</h1>
             <ul>
-                <li>Players place cards at the start exposing their intent.</li>
-                <li>Cads activate when pushed into the 3rd link by other cards placed at the start.</li>
+                <li>Players place cards at the start of the chain, exposing their intent.</li>
+                <li>Cads activate when pushed into the 3rd link by other cards.</li>
                 <li>Some cards can move the chain to the other side, activating cards from previous turns.</li>
                 <li>Player can avoid adding cards to the chain, to prevent the opponent from getting the card they wanted.</li>
             </ul>
@@ -105,6 +129,7 @@
 
     <!-- Base Cards -->
     <div id="cards" class="container fullwidth cardbase" >
+        <img class="edge" src="img/edge.svg">
 
         <h1 >Base Cards</h1>
         <img src="img/carddiv.svg" alt="">
@@ -131,94 +156,102 @@
         <img src="img/carddiv.svg" alt="">
 
         <!-- Tournament -->
-        <div id="tournament" class="container list">
-    
-            <h1 >Tournament</h1>
+        <div class="container">
 
-            <p>We will run a tournament with prizes for 12 players. It will be a mix of 1v1v1 and 1v1 games. Most players will be new, so it should be quite fun.</p>
+            <div id="tournament" class="container list">
         
-            <h2>Tournament info</h2>
-
-            <ul>
-                <li>12 player double elimination</li>
-                <li>Mix of 1v1v1s and 1v1s</li>
-                <li>Will happen over multiple days</li>
-            </ul>
+                <h1 >Tournament</h1>
+    
+                <p>We will run a tournament with prizes for 12 players. It will be a mix of 1v1v1 and 1v1 games. Most players will be new, so it should be quite fun.</p>
+            
+                <h2>Tournament info</h2>
+    
+                <ul>
+                    <li>12 player double elimination</li>
+                    <li>Mix of 1v1v1s and 1v1s</li>
+                    <li>Will happen over multiple days</li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <!-- About -->
-    <div class="container row">
+    <div class="container fullwidth">
+        <div class="diamonds" style="top: -34px;"></div>
 
-        <div class="container list">
-            <h1 id="about">About</h1>
-            <p>
-                We played some old board games and decided to create our own game. Something simple and easy to pick up. After a few months of  design and testing, we came up with our game concept.<br><br>
-        
-                We started a discord community and created a web prototype to play the game with every other day.<br><br>
-        
-                Now we plan to make the game more accessible. We want to improve our browser game and maybe release a physical version as well.
-            </p>
-        </div>
-    
-        <!-- Team -->
         <div class="container row">
-
-            <div class="profile">
-                <div class="speechbubble">
-                    <p>We look for a web developer to improve the game.</p>
-                    <img src="img/triangle.svg" alt="">
-                </div>
-            
-                <img src="img/pav.jpg" alt="">
-            
+            <div class="container list">
+                <h1 id="about">About</h1>
                 <p>
-                    Pavel Alekseev<br>
-                    <span>Design & development</span>
-                </p>
+                    We played some old board games and decided to create our own game. Something simple and easy to pick up. After a few months of  design and testing, we came up with our game concept.<br><br>
             
-                <p>
-                    -
+                    We started a discord community and created a web prototype to play the game with every other day.<br><br>
+            
+                    Now we plan to make the game more accessible. We want to improve our browser game and maybe release a physical version as well.
                 </p>
             </div>
         
-            <div class="profile">
-                <div class="speechbubble">
-                    <p>If you want to join, send 
-                        a note in <a href="https://discord.gg/ybsKua6XVM" target="_blank">Discord</a>.</p>
-                    <img src="img/triangle.svg" alt="">
+            <!-- Team -->
+            <div class="container row autowidth">
+    
+                <div class="profile">
+                    <div class="speechbubble">
+                        <p>We look for a web developer to improve the game.</p>
+                        <img src="img/triangle.svg" alt="">
+                    </div>
+                
+                    <img src="img/pav.jpg" alt="">
+                
+                    <p>
+                        Pavel Alekseev<br>
+                        <span>Design & development</span>
+                    </p>
+                
+                    <p>
+                        -
+                    </p>
                 </div>
             
-                <img src="img/art.jpg" alt="">
-            
-                <p>
-                    Arthur Vaskinels<br>
-                    <span>Development & playtesting</span>
-                </p>
-            
-                <p>Holds a world record for losing the game in two turns.</p>
-            </div>
-        
-            <div class="profile">
-                <div class="speechbubble">
-                    <p>“Omg... I got seven mages!”</p>
-                    <img src="img/triangle.svg" alt="">
+                <div class="profile">
+                    <div class="speechbubble">
+                        <p>If you want to join, send 
+                            a note in <a href="https://discord.gg/ybsKua6XVM" target="_blank">Discord</a>.</p>
+                        <img src="img/triangle.svg" alt="">
+                    </div>
+                
+                    <img src="img/art.jpg" alt="">
+                
+                    <p>
+                        Arthur Vaskinels<br>
+                        <span>Development & playtesting</span>
+                    </p>
+                
+                    <p>Holds a world record for losing the game in two turns.</p>
                 </div>
             
-                <img src="img/pla.jpg" alt="">
-            
-                <p>
-                    Platypus<br>
-                    <span>Playtesting</span>
-                </p>
-            
-                <p>Known for activating Tornado three times in one turn.</p>
+                <div class="profile">
+                    <div class="speechbubble">
+                        <p>“Omg... I got seven mages!”</p>
+                        <img src="img/triangle.svg" alt="">
+                    </div>
+                
+                    <img src="img/pla.jpg" alt="">
+                
+                    <p>
+                        Platypus<br>
+                        <span>Playtesting</span>
+                    </p>
+                
+                    <p>Known for activating Tornado three times in one turn.</p>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="container fullwidth">
+        <div class="diamonds" style="top: -10px;"></div>
+
         <div class="container row">
             <img src="img/logo.svg" alt="">
     
