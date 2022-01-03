@@ -95,6 +95,7 @@ p, ul, ol{
 ul, ol{
     padding-left: 20px;
 }
+
 li{
     margin-bottom: 12px;
 }
@@ -287,6 +288,7 @@ nav .buttongroup a:hover{
     color: var(--b54);
 }
 
+
 /* CARD GRID */
 .edge{
     position: absolute; 
@@ -316,7 +318,7 @@ nav .buttongroup a:hover{
     max-height: 200px;
 }
 
-.cardgrid img:hover{
+.cardgrid img:hover {
     transform: scale(1.03);
     filter: drop-shadow(0 0 24px rgb(0, 0, 0, 0.99));
     z-index: 2;
