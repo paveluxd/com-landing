@@ -36,7 +36,7 @@ body{
 
     gap: 24px;
 
-    background-image: url('/img/cover.svg');
+    background-image: url('img/cover.svg');
     background-repeat:no-repeat;
     background-position-x: center;
 }
@@ -261,7 +261,7 @@ nav .buttongroup a:hover{
 }
 
 #cards{
-    background-image: url(/img/cardscover.svg);
+    background-image: url(img/cardscover.svg);
     background-repeat:no-repeat;
     background-position-x: center;
 
@@ -275,7 +275,7 @@ footer{
     /* align-items: flex-end !important; */
     justify-content: flex-end !important;
 
-    background-image: url('/img/footercover.svg');
+    background-image: url('img/footercover.svg');
     background-repeat:no-repeat;
     background-position-x: center;
 }
