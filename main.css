@@ -4,9 +4,10 @@
     --b54: rgba(0, 0, 0, 0.54);
     --b87: rgba(0, 0, 0, 0.87);
     --blue: #3366FF;
+    --yellow: #f3ca78;
 
-    --w25: rgba(255,255,255,0.25)
-
+    --w25: rgba(255,255,255,0.25);
+    --lighttext: rgb(240,240,240);
 }
 
 html{
@@ -121,7 +122,7 @@ nav{
 }
 
 nav * {
-    color: white;
+    color: var(--lighttext);
     text-decoration: none;
 }
 
@@ -244,7 +245,7 @@ nav .buttongroup a:hover{
 .speechbubble p{
     background-color: black;
     padding: 16px;
-    color: white;
+    color: var(--lighttext);;
 }
 
 .speechbubble a{
@@ -307,7 +308,7 @@ nav .buttongroup a:hover{
 
 .cardbase{
     background-color: black;
-    color: white;
+    color: var(--lighttext);
     padding-top: 48px;
     padding-bottom: 48px;
 }
