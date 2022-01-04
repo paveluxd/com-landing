@@ -1,5 +1,7 @@
 :root{
     --b10: rgba(0, 0, 0, 0.1);
+    --b17: rgba(0, 0, 0, 0.17);
+
     --b38: rgba(0, 0, 0, 0.38);
     --b54: rgba(0, 0, 0, 0.54);
     --b87: rgba(0, 0, 0, 0.87);
@@ -7,6 +9,8 @@
     --yellow: #f3ca78;
 
     --w25: rgba(255,255,255,0.25);
+    --w50: rgba(255,255,255,0.75);
+
     --lighttext: rgb(240,240,240);
 }
 
@@ -113,8 +117,12 @@ nav{
 
 
     display: flex;
-    background-color: var(--b87);
-    backdrop-filter: blur(3px);
+    /* background-color: var(--b87); */
+    background-color: white;
+    filter: drop-shadow(0 0px 3px var(--b17));
+
+
+    /* backdrop-filter: blur(8px); */
     justify-content: space-between;
 
     align-items: center; 
@@ -122,7 +130,8 @@ nav{
 }
 
 nav * {
-    color: var(--lighttext);
+    /* color: var(--lighttext); */
+    color: black;
     text-decoration: none;
 }
 
@@ -141,7 +150,7 @@ nav .buttongroup a{
 }
 
 nav .buttongroup a:hover{
-    background-color: var(--w25);   
+    background-color: var(--b10);   
 }
 
 .discbutton{
@@ -232,7 +241,6 @@ nav .buttongroup a:hover{
 
 
 /* CHAIN */
-
 #chain{
     padding-bottom: 80px;
 }
@@ -259,7 +267,7 @@ nav .buttongroup a:hover{
     transform: rotate(-8deg);
 }
 
-#chain h1{
+#chain h1:nth-child(2){
     color: var(--b54);
 }
 
