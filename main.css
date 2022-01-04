@@ -168,7 +168,6 @@ nav .buttongroup a:hover{
 
 
 
-
 /* MAIN PAGE */
 .cover {
     height: 752px;
@@ -184,6 +183,8 @@ nav .buttongroup a:hover{
 .cover span{
     font-size:28px;
 }
+
+
 
 /* HOW */
 #how {
@@ -259,6 +260,7 @@ nav .buttongroup a:hover{
 }
 
 
+
 /* CHAIN */
 
 #chain{
@@ -290,6 +292,7 @@ nav .buttongroup a:hover{
 #chain h1{
     color: var(--b54);
 }
+
 
 
 /* CARD GRID */
@@ -339,6 +342,8 @@ nav .buttongroup a:hover{
    margin-left: 86px;
 }
 
+
+
 /* ABOUT */
 .diamonds {
     position: absolute; 
@@ -350,6 +355,24 @@ nav .buttongroup a:hover{
 #about{
     padding: 48px 0;
 }
+
+.team{
+    gap: 0px;
+}
+
+.team div:nth-child(1){
+    margin-top: -48px;
+}
+
+.team div:nth-child(2){
+    margin-top: 118px;
+}
+
+.team div:nth-child(3){
+    margin-top: -20px;
+}
+
+
 
 /* FOOTER */
 footer{
