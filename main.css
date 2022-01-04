@@ -128,8 +128,7 @@ nav * {
 .buttongroup{
     display: flex;
     gap: 0px;
-
-    padding-right: 24px;
+    padding-right: 12px;
 }
 
 
