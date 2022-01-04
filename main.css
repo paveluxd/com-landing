@@ -351,7 +351,7 @@ nav .buttongroup a:hover{
 /* FOOTER */
 footer{
     background-color: var(--b10);
-    height: 460px;
+    height: 340px;
 
     /* align-items: flex-end !important; */
     justify-content: flex-end !important;
