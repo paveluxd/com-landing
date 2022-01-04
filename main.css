@@ -125,6 +125,14 @@ nav * {
     text-decoration: none;
 }
 
+.buttongroup{
+    display: flex;
+    gap: 0px;
+
+    padding-right: 24px;
+}
+
+
 nav .buttongroup a{
     padding: 12px 8px;
     line-height: 28px;
@@ -159,10 +167,6 @@ nav .buttongroup a:hover{
     background-color: var(--w25);
 }
 
-.buttongroup{
-    display: flex;
-    gap: 0px;
-}
 
 
 
