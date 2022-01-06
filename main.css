@@ -404,3 +404,87 @@ footer div{
     justify-content: flex-end !important;
     gap: 12px !important;
 }
+
+@media (max-width:481px)  {
+     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+    
+    body{
+        background-size: 2000px 1400px;
+    }
+
+     #how, 
+    #chain, 
+    #about div:nth-child(2),
+    footer .container:nth-child(2)
+    {
+        flex-direction: column;
+    }
+
+    .container{
+        width: 100vw;
+    }
+
+    p, .list{
+        max-width: calc(100vw - 48px);
+    }
+
+    #how{
+        align-items: center;
+    }
+    #how img{
+        width: 100%;
+        transform: rotate(0deg);
+        margin-top: 0px;
+    }
+
+    .unitgap{
+        margin-bottom: 220px !important;
+    }
+
+    .speechbubble:nth-child(1){
+        top: 67px !important;
+        left: 65px !important;
+    }
+
+    .speechbubble:nth-child(2){
+        top: 140px !important;
+        left: 65px !important;
+    }
+
+    .speechbubble:nth-child(2) img{
+        display: none;
+    }
+
+    .cardgrid img {
+        max-width: 40vw;
+    }
+
+    #tournament{
+        margin-left: 24px;
+    }
+
+    nav, 
+    #chain .container:nth-child(1), 
+    #how .speechbubble:nth-child(2),
+    .carddiv
+    {
+        display: none;
+    }
+
+    .cover h1 {
+        margin: 352px auto 80px auto;
+    }
+
+    .profile{
+        margin-top: 80px !important;
+    }
+
+    footer .container:nth-child(2){
+        align-self: center;
+        justify-content: center !important;
+    }
+
+    footer .container{
+        width: calc(100vw - 48px);
+    }
+}
