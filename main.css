@@ -399,7 +399,7 @@ nav .buttongroup a:hover{
 /* FOOTER */
 footer{
     background-color: var(--b10);
-    height: 340px;
+    height: 400px;
 
     /* align-items: flex-end !important; */
     justify-content: flex-end !important;
@@ -415,9 +415,9 @@ footer .row{
 }
 
 footer div{
-    align-items: flex-end !important;
+    align-items: flex-start !important;
     justify-content: flex-end !important;
-    gap: 12px !important;
+    gap: 48px !important;
 }
 
 @media (max-width:481px)  {
